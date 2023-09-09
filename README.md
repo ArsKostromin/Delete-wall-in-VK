@@ -5,4 +5,4 @@
 
 <p>Введите в строке pip install vk_api</p>
 
-<p>Получите свои токен с доступом к стене https://vkhost.github.io</p> 
+<p>Получите свои токен с доступом к стене в любое время https://vkhost.github.io</p> 
