@@ -1,7 +1,16 @@
 import vk_api
 
-session = vk_api.VkApi(token='vk1.a.v_Uj4tlViF93OgvL8oZusC4V78A94Ff1ud9wydCui2chHRxwI1EIR3WrIw_Uolrdp5H9x77g3oSPN5-afQ-pWNPJ_zh-sAjTr6ry3qfBrT_lRpSzOy72IK9AtsgF2eVMUn2gL4vPKh1QFFOQtRIFqtaKeW9PdbC1hCA4dSxAnlK9v01FiseEfhE5a5HzAf6X29tVV4YuUDPH9YKxrqSJBA')
+
+
+#user_token = input('Введите ваш токен https://vkhost.github.io   ==>  ')
+
+session = vk_api.VkApi(token='vk1.a.QzRAo7KUj1qSWql8rmAuoDdCJ9jjEDvbkA0074NY0_p4_mpVIxSdnZLlrjDgl49MR5Nb-LdUQMY99wM_zS5g1msDggH9yTqYKRxk308Ew6x-tpwVBsRUKQFxLwCWcUpbM75QIOCFKawwJxi5kiFV25Fw44d9-E2I6NUqM2276jDCstSudzbBty5ZFBmlXNFUTwk-cCsxZuLCWeu9tEa2QQ')
 vk = session.get_api()
+
+
+user_id = session.method('user_id.get')
+
+print(user_id)
 
 def delete_wall(owner_id, post_id):
     session.method('wall.delete', {'owner_id': owner_id, 'post_id':post_id})
@@ -22,7 +31,7 @@ def delete_all_wall(count):
 # delete_wall(310513537, 1)
 
 
-#https://vk.com/wall310513537_1920
+#vk1.a.QzRAo7KUj1qSWql8rmAuoDdCJ9jjEDvbkA0074NY0_p4_mpVIxSdnZLlrjDgl49MR5Nb-LdUQMY99wM_zS5g1msDggH9yTqYKRxk308Ew6x-tpwVBsRUKQFxLwCWcUpbM75QIOCFKawwJxi5kiFV25Fw44d9-E2I6NUqM2276jDCstSudzbBty5ZFBmlXNFUTwk-cCsxZuLCWeu9tEa2QQ
 
 
 
