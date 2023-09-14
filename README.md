@@ -1,4 +1,4 @@
-# Remove VK wall
+# Delete wall in vk
 <H1>Удалить все записи с вашей стены ВК</H1>
 
 
